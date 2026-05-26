@@ -1,0 +1,722 @@
+.nav-link {
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* NAVBAR SUPER AESTHETIC */
+.custom-navbar {
+  background: linear-gradient(135deg, #ff9ecf, #c084fc);
+
+  padding: 14px 0;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);
+
+  transition: 0.4s ease;
+}
+
+/* Logo */
+.navbar-brand {
+  color: white !important;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu */
+.nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+
+  font-weight: 500;
+
+  margin-left: 18px;
+
+  position: relative;
+
+  transition: 0.3s ease;
+}
+
+/* Hover menu */
+.nav-link:hover {
+  color: white !important;
+
+  transform: translateY(-2px);
+}
+
+/* Underline animasi */
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0%;
+  height: 2px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  transition: 0.3s ease;
+}
+
+/* Hover underline */
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Hamburger */
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* JUMBOTRON */
+.jumbotron {
+  min-height: 100vh;
+
+  padding-top: 120px;
+
+  /* Pink soft aesthetic */
+  background: linear-gradient(135deg, #ffd6e7, #ffc2d1, #ffb3c6);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  text-align: center;
+}
+
+/* Foto profil */
+.jumbotron img {
+  width: 220px;
+  height: 220px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 5px solid rgba(255, 255, 255, 0.9);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  animation: floating 3s ease-in-out infinite;
+
+  transition: 0.4s ease;
+}
+
+/* Hover foto */
+.jumbotron img:hover {
+  transform: scale(1.05);
+}
+
+/* Nama */
+.jumbotron h1 {
+  font-weight: 700;
+
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Subtitle */
+.jumbotron p {
+  opacity: 0.95;
+  letter-spacing: 1px;
+}
+
+/* Animasi ngambang */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ABOUT SECTION */
+.about-section {
+  min-height: auto;
+
+  padding: 70px 0;
+
+  /* Abu soft aesthetic */
+  background: linear-gradient(135deg, #f1f5f9, #dfe9f3, #e5e7eb);
+
+  color: #1e293b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Judul */
+.about-section h2 {
+  font-size: 42px;
+
+  text-align: center;
+
+  margin-bottom: 10px;
+
+  font-weight: 700;
+
+  color: #334155;
+}
+
+/* Card */
+.about-card {
+  background: rgba(255, 255, 255, 0.6);
+
+  backdrop-filter: blur(14px);
+
+  border-radius: 28px;
+
+  padding: 35px 25px;
+
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  transition: 0.4s ease;
+}
+
+/* Hover */
+.about-card:hover {
+  transform: translateY(-8px);
+
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Nama */
+.about-card h4 {
+  font-size: 28px;
+
+  margin-bottom: 15px;
+
+  font-weight: 700;
+
+  color: #1e293b;
+}
+
+/* Text */
+.about-card p {
+  line-height: 1.7;
+
+  color: #475569;
+
+  opacity: 0.95;
+}
+
+/* SECTION GALLERY */
+.projects-section {
+  padding: 120px 0;
+
+  /* Biru aesthetic premium */
+  background: linear-gradient(135deg, #2563eb, #3b82f6, #60a5fa);
+
+  color: white;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow background */
+.projects-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border-radius: 50%;
+
+  top: -200px;
+  right: -150px;
+
+  filter: blur(40px);
+}
+
+/* Judul */
+.projects-section h2 {
+  font-size: 48px;
+
+  font-weight: 700;
+
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* CARD */
+.project-card {
+  background: rgba(255, 255, 255, 0.14);
+
+  backdrop-filter: blur(14px);
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+
+  transition: 0.4s ease;
+
+  height: 100%;
+}
+
+/* Hover */
+.project-card:hover {
+  transform: translateY(-12px) scale(1.03);
+
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* IMAGE */
+.project-img {
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%;
+  height: 240px;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+/* Zoom image */
+.project-card:hover img {
+  transform: scale(1.1);
+}
+
+/* CONTENT */
+.project-content {
+  padding: 28px;
+
+  text-align: center;
+}
+
+/* Judul card */
+.project-content h4 {
+  color: white;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  margin-bottom: 14px;
+}
+
+/* Text */
+.project-content p {
+  line-height: 1.8;
+
+  opacity: 0.95;
+
+  margin-bottom: 22px;
+}
+
+/* BUTTON */
+.project-btn {
+  display: inline-block;
+
+  padding: 12px 30px;
+
+  border-radius: 50px;
+
+  background: white;
+
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+/* Hover button */
+.project-btn:hover {
+  transform: scale(1.05);
+
+  background: #eff6ff;
+}
+
+/* Tombol */
+.project-btn {
+  display: inline-block;
+
+  padding: 12px 30px;
+
+  border-radius: 50px;
+
+  background: white;
+
+  color: #4facfe;
+  text-decoration: none;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+/* Hover tombol */
+.project-btn:hover {
+  transform: scale(1.05);
+  background: #eaf7ff;
+}
+
+/* CONTACT SECTION CEWEK AESTHETIC */
+.contact-section {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 90px 20px;
+
+  /* Pink soft + ungu pastel */
+  background: linear-gradient(135deg, #ffd6e7, #fbcfe8, #d8b4fe);
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+/* Glow */
+.contact-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  background: rgba(255, 255, 255, 0.25);
+
+  border-radius: 50%;
+
+  top: -150px;
+  right: -100px;
+
+  filter: blur(40px);
+}
+
+/* Judul */
+.contact-section h2 {
+  font-size: 52px;
+
+  font-weight: 700;
+
+  color: white;
+
+  text-align: center;
+
+  margin-bottom: 12px;
+
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Subtitle */
+.contact-section p {
+  color: rgba(255, 255, 255, 0.9);
+
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+/* FORM */
+.contact-form {
+  width: 100%;
+  max-width: 720px;
+
+  background: rgba(255, 255, 255, 0.22);
+
+  backdrop-filter: blur(16px);
+
+  padding: 50px;
+
+  border-radius: 35px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+
+  transition: 0.4s ease;
+}
+
+/* Hover */
+.contact-form:hover {
+  transform: translateY(-6px);
+}
+
+/* Label */
+.form-label {
+  color: white;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+}
+
+/* Input */
+.form-control {
+  background: rgba(255, 255, 255, 0.65);
+
+  border: none;
+
+  border-radius: 18px;
+
+  padding: 15px 20px;
+
+  color: #374151;
+
+  box-shadow: none !important;
+
+  transition: 0.3s ease;
+}
+
+/* Placeholder */
+.form-control::placeholder {
+  color: #9ca3af;
+}
+
+/* Focus */
+.form-control:focus {
+  background: white;
+
+  border: 2px solid #f9a8d4;
+
+  transform: scale(1.01);
+}
+
+/* BUTTON */
+.contact-btn {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background: linear-gradient(135deg, #ff8dc7, #c084fc);
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+/* Hover */
+.contact-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 30px rgba(255, 141, 199, 0.35);
+}
+
+/* FOOTER */
+.footer-section {
+  padding: 100px 20px 70px;
+
+  background: linear-gradient(135deg, #ff9ecf, #c084fc, #7dd3fc);
+
+  text-align: center;
+
+  color: white;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* Glow kiri */
+.footer-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  border-radius: 50%;
+
+  top: -100px;
+  left: -80px;
+
+  filter: blur(40px);
+}
+
+/* Glow kanan */
+.footer-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border-radius: 50%;
+
+  bottom: -120px;
+  right: -100px;
+
+  filter: blur(45px);
+}
+
+/* Garis */
+.footer-line {
+  width: 110px;
+  height: 6px;
+
+  background: white;
+
+  margin: 0 auto 35px;
+
+  border-radius: 50px;
+
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Nama */
+.footer-section h2 {
+  font-size: 45px;
+
+  font-weight: 700;
+
+  margin-bottom: 18px;
+
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Text */
+.footer-section p {
+  max-width: 650px;
+
+  margin: auto auto 40px;
+
+  line-height: 1.9;
+
+  font-size: 17px;
+
+  opacity: 0.95;
+}
+
+/* Copyright */
+.footer-section small {
+  display: inline-block;
+
+  padding: 12px 26px;
+
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(12px);
+
+  color: white;
+
+  font-size: 14px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lead {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ff4fd8;
+  text-shadow:
+    0 0 10px #ff4fd8,
+    0 0 20px #6c63ff;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+  color: #ff4fd8;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons .icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+}
+
+.social-icons .icon:hover {
+  background: white;
+  color: #ff2e93;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* MOBILE NAVBAR FIX */
+@media (max-width: 768px) {
+  .navbar-collapse {
+    background: linear-gradient(135deg, #ff9ecf, #c084fc);
+    padding: 15px;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+    display: block;
+  }
+}
